@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Create Account</title>
+	<style>
+		body{
+			text-align : center;
+			position:relative;
+			top:240px;
+			background-color : snow;
+		}
+		input{
+			margin-bottom: 20px;
+			margin-left: 5px;
+			width : 300px;
+			height: 30px;
+			font-size : 22px;
+			border-top: none;
+			border-right :  none;
+			border-left : none;
+			border-bottom: 2px solid orange;
+			background-color : snow;
+		}
+		input:focus{
+			outline: none;
+		}
+
+		.btn{
+			background-color: orange;
+			font-family: cursive;
+			cursor: pointer;
+			width: 115px;
+			text-align : center;
+			margin-left : 19px;
+			margin-top : 19px;
+			height: 39px;
+			border : 2px solid black;
+			border-radius : 4px;
+			font-family:serif;
+			font-size:14px;
+		}
+		p{
+			position: relative;
+			bottom: 39px;
+		}
+		a{
+			color: black;
+			margin-right: 5px;
+			background-color: orange;
+			border: 1px solid black;
+			border-radius : 2px;
+			padding:2px;
+			
+		}
+		a:hover{
+			background-color : black;
+			color: orange;
+		}
+		a:focus{
+			outline:none;
+			background-color: black;
+			color: orange;
+		}
+		label{
+			font-family: sans-serif;	
+		}
+		label[for='id_name'], label[for='id_email']{
+			margin-left: 32px;
+		}
+	</style>
+</head>
+<body>
+	<p><a href='http://127.0.0.1:8000/login'>Log In</a> if you already have an account</p>
+	<form action="" method="POST">
+		{% csrf_token %}
+		{% for i in form %}
+			{{i.errors}}
+			{{i.label_tag}} {{i}} </br>
+		{% endfor %}
+		<input type="submit" value="Create Account" class="btn">
+	</form>
+</body>
+</html>

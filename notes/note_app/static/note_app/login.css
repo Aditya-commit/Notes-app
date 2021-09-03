@@ -1,0 +1,223 @@
+body{
+text-align : center;
+background-color: white;
+}
+p{
+position: relative;
+top:130px;
+font-size : 20px;
+font-family: cursive;
+}
+a{
+color: red;
+}
+form{
+position: relative;
+top:190px;
+}
+label{
+font-family: cursive;
+position: relative;
+top:11px;
+}
+input{
+position: relative;
+left: 15px;
+font-family: sans-serif;
+font-size:27px;
+color:black;
+width:200px;
+border-top:none;
+border-left:none;
+border-right: none;
+border-bottom: 2px solid orange;
+}
+input:focus{
+outline: none;
+}
+.btn{
+background-color: orange;
+font-family: cursive;
+cursor: pointer;
+position: relative;
+top:80px;
+width: 79px;
+height: 26px;
+font-family : serif;
+font-size : 18px;
+border-radius: 2px;
+border: 2px solid black;
+}
+.btn:hover{
+background-color:#ed9d0a;
+border-radius:3px;
+}
+@media only screen and (min-width: 220px) and (max-width: 235px){
+p{
+font-family: monospace;
+font-size: 14px;
+}
+label{
+font-size: 17px;
+font-family: monospace;
+}
+input{
+width: 106px;
+}
+}
+@media only screen and (min-width: 236px) and (max-width: 240px){
+p{
+font-family: monospace;
+font-size: 14px;
+}
+input{
+width: 110px;
+font-size: 21px;
+}
+label{
+font-family: monospace;
+}
+}
+@media only screen and (min-width: 240px) and (max-width: 250px){
+p{
+font-family: monospace;
+font-size: 14px;
+}
+input{
+width:125px;
+}
+label{
+font-family: monospace;
+font-size:16px;
+}
+.btn{
+position:relative;
+top:104px;
+}
+}
+@media only screen and (min-width: 251px) and (max-width: 260px){
+p{
+font-family:cursive;
+font-size:16px;
+}
+input{
+width:148px;
+}
+input[type='password']{
+position:relative;
+top:34px;
+}
+label{
+font-family: cursive;
+font-size: 16px;
+}
+label[for='id_password']{
+position:relative;
+top:34px;
+}
+}
+@media only screen and (width: 320px){
+p{
+font-family: monospace;
+}
+label{
+font-family: monospace;
+font-size: 16px;
+}
+input{
+width:143px;
+}
+input[type='password']{
+margin-top: 23px;
+}
+}
+@media only screen and (min-width: 321px) and (max-width: 396px){
+p{
+font-size: 18px;
+font-family: monospace;
+position: relative;
+top: 199px;
+}
+label{
+font-family: monospace;
+font-size: 23px;
+}
+input{
+width:145px;
+}
+input[type='password']{
+margin-top: 34px;
+}
+form{
+position: relative;
+top: 294px;
+}
+}
+@media only screen and (min-width: 400px) and (max-width: 420px){
+p{
+font-family: monospace;
+position:relative;
+top:200px;
+}
+form{
+position:relative;
+top:240px;
+}
+label{
+font-family: monospace;
+font-size: 23px;
+}
+input{
+margin-top: 12px;
+font-family: monospace;
+}
+input[type='password']{
+margin-top: 34px;
+}
+}
+@media only screen and (min-width: 421px) and (max-width: 500px){
+p{
+top:400px;
+}
+form{
+top:470px;
+}
+label{
+font-size: 26px;
+font-family: monospace;
+}
+input[type='password']{
+margin-top: 35px;
+}
+.btn{
+width: 102px;
+height: 38px;
+font-size: 22px;
+font-family: monospace;
+}
+}
+@media only screen and (min-width: 501px) and (max-width: 525px){
+p{
+font-family: monospace;
+}
+input{
+width:90px;
+}
+}
+@media only screen and (min-width: 501px) and (max-width: 1000px){
+p{
+top:300px;
+font-family:cursive;
+font-size: 34px;
+}
+label{
+font-family: cursive;
+font-size: 35px;
+}
+form{
+top: 425px;
+}
+input{
+width:340px;
+}
+}
